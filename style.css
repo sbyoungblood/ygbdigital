@@ -9,6 +9,10 @@
   background-color: none;
 } */
 
+* {
+  font-family: Phantomsans, sans-serif;
+}
+
 .logo-bg {
   background-image: linear-gradient(144deg,#BB85EA, #3943B7 50%,#20A4F3);
   width: 30vw;
@@ -17,16 +21,15 @@
 .logo-text {
   width: 30vw;
   background-color: rgb(5, 6, 45);
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .logo-text:hover {
   background: none;
 }
 
-button {
+/* button {
   align-items: center;
-  /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
   background-image: linear-gradient(144deg,#BB85EA, #3943B7 50%,#20A4F3);
   border: 0;
   border-radius: 8px !important;
@@ -70,4 +73,71 @@ button {
  
  button:active {
   transform: scale(0.9);
+ } */
+
+ .welcome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
  }
+
+ body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of the viewport */
+}
+
+header {
+  /* Your header styles */
+}
+
+main {
+  flex: 1; /* Take up remaining vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Add some margin for spacing */
+}
+
+/* Add a media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+  .mobile-buttons {
+    flex-direction: row; /* Display buttons horizontally on small screens */
+    justify-content: center;
+  }
+
+  .logo-bg, .logo-text {
+    width: 100%; /* Make the logo full-width on small screens */
+  }
+
+  button {
+    width: 100%; /* Make the buttons full-width on small screens */
+  }
+
+}
+
+.contact-form {
+  width: 70vw;
+  color: red;
+}
+
+
+
+
+
+
